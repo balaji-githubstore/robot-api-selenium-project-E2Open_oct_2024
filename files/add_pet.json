@@ -1,0 +1,22 @@
+{
+    "id": 789,
+    "category": {
+        "id": 0,
+        "name": "Pincher"
+    },
+    "name": "Noya-789",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        },
+         {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}

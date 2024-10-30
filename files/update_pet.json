@@ -1,0 +1,18 @@
+{
+    "id": 789,
+    "category": {
+        "id": 0,
+        "name": "Pincher"
+    },
+    "name": "xxx-789",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 10,
+            "name": "xxx"
+        }
+    ],
+    "status": "available"
+}

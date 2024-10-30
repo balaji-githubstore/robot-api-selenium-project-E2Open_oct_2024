@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20241030 14:14:41.504" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo2 Advance" source="C:\Mine\Company\E2open 28 Oct 2024\AutomationProject\demo4_selenium_suite\demo2_advance.robot">
+<test id="s1-t1" name="TC2" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241030 14:14:42.113" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241030 14:14:42.113" endtime="20241030 14:14:44.896"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241030 14:14:44.897" endtime="20241030 14:14:44.964"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20241030 14:14:44.965" endtime="20241030 14:14:44.969"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20241030 14:14:44.971" level="INFO">Opening url 'https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm'</msg>
+<status status="PASS" starttime="20241030 14:14:44.970" endtime="20241030 14:14:45.804"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//img[@alt='Go']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241030 14:14:45.807" level="INFO">Clicking element 'xpath=//img[@alt='Go']'.</msg>
+<status status="PASS" starttime="20241030 14:14:45.805" endtime="20241030 14:14:46.001"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${actual_alert_text}</var>
+<arg>action=ACCEPT</arg>
+<arg>timeout=30s</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20241030 14:14:46.003" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:30</msg>
+<msg timestamp="20241030 14:14:46.011" level="INFO">${actual_alert_text} = Customer ID  cannot be left blank.</msg>
+<status status="PASS" starttime="20241030 14:14:46.001" endtime="20241030 14:14:46.011"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_alert_text}</arg>
+<arg>Customer ID${SPACE}${SPACE}cannot be left blank.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241030 14:14:46.012" endtime="20241030 14:14:46.013"/>
+</kw>
+<status status="PASS" starttime="20241030 14:14:42.111" endtime="20241030 14:14:46.014"/>
+</test>
+<status status="PASS" starttime="20241030 14:14:41.509" endtime="20241030 14:14:46.016"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Advance">Demo2 Advance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
